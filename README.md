@@ -10,3 +10,7 @@ docker-compose up --build --abort-on-container-exit
 You can’t use network_mode: "host" — instead, update cypress.config.js to use:
 
 baseUrl: 'http://host.docker.internal:3000'
+
+## Install mochawesome
+
+npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generator
