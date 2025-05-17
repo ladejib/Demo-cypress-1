@@ -1,0 +1,13 @@
+{
+  "name": "cypress-framework",
+  "version": "1.0.0",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test:ci": "cypress run --browser chrome"
+  },
+  "devDependencies": {
+    "cypress": "^14.3.3"
+  }
+}
+

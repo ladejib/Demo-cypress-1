@@ -1,0 +1,11 @@
+services:
+  cypress:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    environment:
+      - CYPRESS_baseUrl
+    volumes:
+      - .:/e2e
+    network_mode: "host"  # Allows Cypress container to access localhost on the host machine (Linux only)
+
